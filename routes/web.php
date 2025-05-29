@@ -20,7 +20,7 @@ Route::get('admin', function () {
 
 // permission
 Route::get('penulis', function () {
-    return '<h1>ini penulis</h1>';
+    return redirect()->route('dashboard');
 })->middleware(['auth', 'verified', 'role:penulis|admin'])->name('penulis');
 
 // role or permission
