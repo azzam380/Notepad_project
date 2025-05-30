@@ -34,7 +34,16 @@
             @forelse($notes as $note)
                 <div class="bg-gray-900 border border-cyan-600 rounded-xl p-6 shadow-lg hover:shadow-cyan-400/40 transition transform hover:scale-[1.01] animate-fade-in">
                     <h3 class="text-xl font-bold text-cyan-300 mb-2">{{ $note->title }}</h3>
-                    <p class="text-gray-300">{{ $note->content }}</p>
+
+                    {{-- Konten dengan toggle --}}
+                    @php
+                        $contentPreview = Str::limit($note->content, 200);
+                    @endphp
+                    <p class="text-gray-300 whitespace-pre-line">
+                        <span id="preview-{{ $note->id }}">{{ $contentPreview }}@if(strlen($note->content) > 200)... <button onclick="toggleContent({{ $note->id }})" class="text-cyan-400 hover:underline">Baca selengkapnya</button>@endif</span>
+                        <span id="full-{{ $note->id }}" class="hidden">{{ $note->content }} <button onclick="toggleContent({{ $note->id }})" class="text-cyan-400 hover:underline">Tutup</button></span>
+                    </p>
+
                     <div class="mt-4 flex space-x-4">
                         <a href="{{ route('notes.edit', $note) }}"
                            class="flex items-center text-cyan-400 hover:text-cyan-300 transition">
@@ -75,4 +84,13 @@
             text-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 15px #0ff;
         }
     </style>
+
+    <script>
+        function toggleContent(id) {
+            const preview = document.getElementById('preview-' + id);
+            const full = document.getElementById('full-' + id);
+            preview.classList.toggle('hidden');
+            full.classList.toggle('hidden');
+        }
+    </script>
 </x-app-layout>
