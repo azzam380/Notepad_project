@@ -1,7 +1,7 @@
 <x-guest-layout>
 
         <!-- Card -->
-        <div class="bg-[#1e293b] text-white rounded-2xl shadow-2xl w-full max-w-md px-8 py-10 transform transition duration-500 ease-in-out hover:scale-[1.01] hover:shadow-cyan-500/20 animate-fade-in">
+
             <div class="flex flex-col items-center mb-6">
                 <h2 class="text-3xl font-bold text-cyan-400 text-center leading-tight mb-2 tracking-wide drop-shadow">
                     Welcome to <br> MyNotepad
@@ -56,7 +56,7 @@
                     <a href="{{ route('register') }}" class="text-blue-400 hover:underline transition duration-200">Register</a>
                 </div>
             </form>
-        </div>
+
 
 
     <!-- Animasi Keyframe -->

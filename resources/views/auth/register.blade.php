@@ -1,7 +1,7 @@
 <x-guest-layout>
 
         <!-- Card -->
-        <div class="bg-[#1e293b] text-white rounded-2xl shadow-2xl w-full max-w-md px-8 py-10 animate-fade-in transform transition duration-500 ease-in-out hover:scale-[1.01] hover:shadow-cyan-500/20">
+ 
 
             <!-- Heading -->
             <div class="flex flex-col items-center mb-6">
@@ -63,7 +63,7 @@
                     <a href="{{ route('login') }}" class="text-blue-400 hover:underline transition duration-200">Back to Login</a>
                 </div>
             </form>
-        </div>
+    
     <!-- Animation Keyframe -->
     <style>
         @keyframes fadeIn {
