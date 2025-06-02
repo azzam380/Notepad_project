@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="text-2xl font-extrabold text-cyan-400 drop-shadow-glow animate-fade-in">🧠 My Notes</h2>
+        <h2 class="font-semibold text-2xl text-cyan-400 leading-tight text-center drop-shadow-glow animate-fade-in">🧠 My Notes</h2>
     </x-slot>
 
         <div class="flex justify-between items-center flex-wrap gap-4 mb-6 animate-fade-in">
