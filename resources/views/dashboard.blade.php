@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12 bg-gradient-to-br from-black via-gray-900 to-black min-h-screen animate-fade-in">
+
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-[#1e293b] text-white overflow-hidden shadow-xl rounded-2xl p-8 transition duration-300 hover:shadow-cyan-500/20 hover:scale-[1.01]">
                 <div class="text-center text-2xl font-bold mb-2">
@@ -19,7 +19,6 @@
                 </p>
             </div>
         </div>
-    </div>
 
     <!-- Fade In Animation -->
     <style>

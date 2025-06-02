@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12 bg-gradient-to-br from-black via-gray-900 to-black min-h-screen animate-fade-in">
+
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-10">
 
             <!-- Update Profile Info -->
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 
     <!-- Fade In Animation -->
     <style>

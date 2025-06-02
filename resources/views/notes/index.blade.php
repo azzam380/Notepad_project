@@ -3,7 +3,6 @@
         <h2 class="text-2xl font-extrabold text-cyan-400 drop-shadow-glow animate-fade-in">🧠 My Notes</h2>
     </x-slot>
 
-    <div class="px-6 py-8 bg-gray-950 min-h-[80vh]">
         <div class="flex justify-between items-center flex-wrap gap-4 mb-6 animate-fade-in">
             <div class="flex space-x-4">
                 <a href="{{ route('notes.create') }}"
@@ -62,7 +61,7 @@
                 <div class="text-center text-gray-400 animate-fade-in">📭 No notes found{{ request('search') ? ' for "' . request('search') . '"' : '' }}. Try again!</div>
             @endforelse
         </div>
-    </div>
+
 
     <style>
         @keyframes fadeIn {
