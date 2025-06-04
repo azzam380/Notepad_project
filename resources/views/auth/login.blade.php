@@ -4,7 +4,7 @@
 
             <div class="flex flex-col items-center mb-6">
                 <h2 class="text-3xl font-bold text-cyan-400 text-center leading-tight mb-2 tracking-wide drop-shadow">
-                    Welcome to <br> MyNotepad
+                    Welcome Back to MyNotepad
                 </h2>
                 <p class="text-sm text-gray-300 text-center max-w-xs">
                     Your secure and simple personal notepad. Write, save, and access anywhere.
